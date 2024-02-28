@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta
+      name="keywords"
+      content="app, landing, corporate, Creative, Html Template, Template"
+    />
+    <meta name="author" content="web-themes" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- title -->
+    <title>carousel slider</title>
+
+    <!-- favicon -->
+    <!-- <link href="img/favicon.png" type="image/png" rel="icon"> -->
+
+    <!-- all css here -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <script>
+        // when the DOM is ready
+        document.addEventListener("DOMContentLoaded", function() { 
+          // get the the span element
+          const yrSpan = document.querySelector('.yearAutoUpdate');
+          // get the current year
+          const currentYr = new Date().getFullYear();
+          // set the year span element's text to the current year
+          yrSpan.textContent = currentYr;
+        });
+        </script>
+
+  </head>
+  <body>
+    <!-- card area start -->
+    <div class="card_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="head_text">Featured profiles</h2>
+            <p class="head_para">
+              Aenean at ligula massa. Donec ipsum elit, placenta sed duierrut<br />
+              dapibus semper turpin Fusce nec premium nuns.
+            </p>
+          </div>
+          <div class="col-12">
+            <div class="owl-carousel slider_carousel">
+              <div class="card_box">
+                <img class="img-fluid w-100" src="img/slider-01.png" alt="" />
+                <div class="card_text">
+                  <h4>Profile ID: 23456</h4>
+                  <p>1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+                </div>
+              </div>
+              <div class="card_box">
+                <img class="img-fluid w-100" src="img/slider-02.png" alt="" />
+                <div class="card_text">
+                  <h4>Profile ID: 23456</h4>
+                  <p>1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+                </div>
+              </div>
+              <div class="card_box">
+                <img class="img-fluid w-100" src="img/slider-03.png" alt="" />
+                <div class="card_text">
+                  <h4>Profile ID: 23456</h4>
+                  <p>1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+                </div>
+              </div>
+              <div class="card_box">
+                <img class="img-fluid w-100" src="img/slider-04.png" alt="" />
+                <div class="card_text">
+                  <h4>Profile ID: 23456</h4>
+                  <p>1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+                </div>
+              </div>
+              <div class="card_box">
+                <img class="img-fluid w-100" src="img/slider-05.png" alt="" />
+                <div class="card_text">
+                  <h4>Profile ID: 23456</h4>
+                  <p>1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+                </div>
+              </div>
+              <div class="card_box">
+                <img class="img-fluid w-100" src="img/slider-01.png" alt="" />
+                <div class="card_text">
+                  <h4>Profile ID: 23456</h4>
+                  <p>1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+                </div>
+              </div>
+              <div class="card_box">
+                <img class="img-fluid w-100" src="img/slider-03.png" alt="" />
+                <div class="card_text">
+                  <h4>Profile ID: 23456</h4>
+                  <p>1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+                </div>
+              </div>
+              <div class="card_box">
+                <img class="img-fluid w-100" src="img/slider-04.png" alt="" />
+                <div class="card_text">
+                  <h4>Profile ID: 23456</h4>
+                  <p>1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+                </div>
+              </div>
+              <div class="card_box">
+                <img class="img-fluid w-100" src="img/slider-05.png" alt="" />
+                <div class="card_text">
+                  <h4>Profile ID: 23456</h4>
+                  <p>1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- card area end -->
+
+    <!-- all js here -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+      function slider_carouselInit() {
+        $(".owl-carousel.slider_carousel").owlCarousel({
+          dots: false,
+          loop: true,
+          margin: 30,
+          stagePadding: 2,
+          autoplay: false,
+          nav: true,
+          navText: [
+            "<i class='far fa-arrow-alt-circle-left'></i>",
+            "<i class='far fa-arrow-alt-circle-right'></i>",
+          ],
+          autoplayTimeout: 1500,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            768: {
+              items: 2,
+            },
+            992: {
+              items: 5,
+            },
+          },
+        });
+      }
+      slider_carouselInit();
+    </script>
+
+    <!-- footer part start -->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container my-5">
+      <!-- Footer -->
+      <footer
+        class="text-center text-lg-start text-white"
+        style="background-color: #1c2331"
+      >
+        <!-- Section: Social media -->
+        <section
+          class="d-flex justify-content-between p-4"
+          style="background-color: #6351ce"
+        >
+          <!-- Left -->
+          <div class="me-5">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+
+          <!-- Right -->
+          <div>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold">Company name</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+                <p>
+                  Here you can use rows and columns to organize your footer
+                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit.
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Products</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+                <p>
+                  <a href="#!" class="text-white">Meow Meow</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-white">Meow Meow</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-white">Meow Meow</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-white">Meow Meow</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Useful links</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+                <p>
+                  <a href="#!" class="text-white">Your Account</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-white">Become an Affiliate</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-white">Shipping Rates</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-white">Help</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Contact</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+                <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © <span class="yearAutoUpdate"></span> Copyright:
+          <a class="text-white" href="https://www.instagram.com/tech.masters.official03?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"
+            >Made with ❤️ by TechMasters</a
+          >
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+  </body>
+</html>
